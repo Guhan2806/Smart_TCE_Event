@@ -1,0 +1,46 @@
+.cont {
+  text-align: center;
+  margin: 200px auto;
+  font-size: 4.5rem;
+  font-family: arial;
+  font-weight: 900;
+  color: transparent;
+  overflow: hidden;
+
+  background-size: 20px 20px, 20px 20px, 1px 1px;
+  background-position: 0 0, 0 0, 0 0;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 4px white;
+  filter: drop-shadow(0 0 1px black) drop-shadow(0 0 1px black)
+    drop-shadow(0 0 1px black) drop-shadow(0 0 1px black)
+    drop-shadow(0 0 1px black) drop-shadow(0 0 1px black)
+    drop-shadow(0 0 1px black) drop-shadow(0 0 1px black)
+    drop-shadow(0 0 2px crimson);
+  animation: tilt-shaking 1s ease-in-out infinite alternate-reverse,
+    swing 2s ease-in-out infinite;
+}
+
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.cont {
+  font-size: xxxx-large;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 200px;
+  width: 500px;
+}
